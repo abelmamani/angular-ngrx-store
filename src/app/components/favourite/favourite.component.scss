@@ -1,0 +1,20 @@
+.list__item{
+    margin-top: 10px;
+}
+.item{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.character{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+img{
+    border-radius: 50%;
+}
+

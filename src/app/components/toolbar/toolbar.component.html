@@ -1,0 +1,12 @@
+<mat-toolbar class="toolbar">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>ANGULAR + NGRX</span>
+    <span class="example-spacer"></span>
+    <button class="button" mat-icon-button (click)="getFavourites()">
+      <mat-icon>favorite</mat-icon>
+      <span class="badge" >{{ store.characters().length }}</span>
+    </button>
+  </mat-toolbar>
+  

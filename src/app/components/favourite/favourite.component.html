@@ -1,0 +1,16 @@
+<mat-toolbar>Mis personajes favoritos</mat-toolbar>
+<mat-list role="list" class="list">
+    @for(character of store.characters(); track character.id){
+        <mat-list-item class="list__item"> 
+            <div class="item">
+               <div class="character">
+                <img [src]="character.thumbnail" width="60" height="60" /> 
+                <span>{{character.name}}</span>
+               </div>
+               <button mat-button (click)="deleteCharacter(character.id)">Eliminar</button>
+            </div>
+            </mat-list-item>
+    }@empty {
+        <mat-list-item role="listitem">No hay favoritos</mat-list-item>
+    }
+  </mat-list>

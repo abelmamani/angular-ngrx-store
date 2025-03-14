@@ -1,0 +1,17 @@
+<mat-toolbar class="toolbar">Mis personajes</mat-toolbar>
+<div class="container">
+    @for (item of characters; track item.id) {
+        <mat-card>
+            <mat-card-header>
+              <mat-card-title> {{item.name}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <img [src]="item.thumbnail" width="300" height="300"/>
+                <button mat-button (click)="addFavourite(item)" [disabled]="existsCharacter(item.id)">Añadir</button>
+            </mat-card-content>
+          </mat-card>
+        } @empty {
+        <li>There are no items.</li>
+    }
+</div>
+
