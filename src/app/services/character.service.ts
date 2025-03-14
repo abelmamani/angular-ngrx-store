@@ -3,7 +3,7 @@ import { inject, Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { adaptMarvelResponse } from '../adapters/character.adapter';
 import { Character } from '../models/character.model';
-import { environment } from 'src/enviroments/enviroments';
+import { environment } from 'src/environments/enviroments';
 
 @Injectable({
   providedIn: 'root'
